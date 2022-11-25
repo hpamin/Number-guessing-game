@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Game</title>
+</head>
+<body dir="rtl">
+    <main class="background">
+        
+
+        <div class="bigCircle"></div>
+
+        <div class="circle circlePosition"></div>
+        
+        <div class="ruleGameCir circle hide"></div>
+
+
+        <h2 class="mosbtsmall fontTitle mosbthover">+</h2>
+        <h2 class="mosbtsmall3 fontTitle mosbthover">+</h2>
+
+        <h2 class="mosbtbig fontTitle mosbthover">+</h2>
+
+        <h2 class="mosbtmiddle fontTitle mosbthover">+</h2>
+
+
+        <section class="screenGame shadow">
+        
+       
+            <div class="correct screenAnswer fontTitle display hide">
+                    
+                <h2>🎉ماشالا درست حدس زدی🎉</h2>
+                <button class="end button">پایان</button>
+
+            </div>
+
+            
+            <div class="wrong screenAnswer fontTitle display hide">
+                <h2>😥ای بابا اشتباه حدس زدی که...😢</h2>
+                <p>تعداد جونات:</p>
+                <h2 id="jon"></h2>
+                <button class="button" id="next">یه شانس دیگ</button>
+            </div>
+        
+
+        <div class="listshow">
+            <nav>
+                <div class="list container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h2 class="fontTitle" style="color: tomato;"><span style="color: white;">HP</span>amin</h2>
+            </nav>
+
+            <div class="listproperty listDisplay">
+
+                <div class="litli fontTitle">
+                    <ul>
+                        <li><h2>درباره ما</h2></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#"> ایمیل ما</a></li>
+                        <li><a href="#">تیم ما</a></li>
+                    </ul>
+
+                    <ul >
+                        <li><h2>خرید</h2></li>
+                        <li><a href="#">الماس</a></li>
+                        <li><a href="#">جون اضافه</a></li>
+                        <li><a href="#">مرچ</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>بازی کننده ها</h2></li>
+                        <li><a href="#">دانلود اپ</a></li>
+                        <li><a href="#">باشگاه مشتریان</a></li>
+                        <li><a href="#">وبلاگ مان</a></li>
+                    </ul>
+                </div>
+                <div class="email litli ">
+                    <form action="#" class="litli">
+                        <input type="email" placeholder="E-Email">
+                        <button type="submit" class="fontTitle" >ارسال</button>
+                    </form>
+                </div>
+
+                <div class="icon">
+
+                    <a href="#" id="insta"><img src="./icon/instagram.png"></a>
+                    <a href="#" id="tele"><img src="./icon/telegram.png"> </a>
+                    <a href="#" id="whatsapp"><img src="./icon/whatsapp.png"> </a>
+                </div>
+                
+                <div class="backbtn">
+                    <button class="back button">بازگشت</button>
+                </div>
+
+            </div>
+        </div>
+
+
+<!--div bad etmame difult haxf bshe-->
+
+
+            <h2 class="by fontTitle hide display" style="height: 350px;">به سلامت بی لایقت👋</h2>
+
+        <div class="fix">
+
+            <div class="Start display">
+            
+                <img src="./img/StartGame.png" alt="StartGame" class="img">
+            
+                <div class="diventer">
+                    
+                    <h1 class="fontTitle" style="font-size: 30px;"> خوش اومدی به بازیه <span class="ruletext"> حدس اعداد </span></h1>
+                    
+                    <div>
+                        <h2 class="fontTitle" style="text-align: center;">بریم برای بازی؟؟؟</h2>
+                    
+                        <div class="startButton">
+                            <buttton class="yes button">بزن بریم</buttton>
+                            <buttton class="no button">نه حال ندارم</buttton>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="ruleGame display hide">
+                 
+                
+                <img src="./img/ruleGame.png" class="img">
+
+                <div class="animRule fontTitle">
+                    <h3 class="ruleGameText">خب <span class="ruletext">قوانین</span> بازی به این صورته که: </h3>
+                    <p>1-شما 5 حدس دارید و با هر بار اشتباه یه حدست میره</p>
+                    <p>2-بازی 3 مرحله آسون متوسط و سخت داره</p>
+                    <p >3-هیچی همیناس</p>
+                    <button class="go button">حله فهمیدم!</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+<!--hzf bshe-->
+<!--hzf bshe--> 
+
+
+
+
+            <div class="difficult display hide">
+
+
+                <div class="difficultText fontTitle">
+                    <h3>خب دشواریه بازیو انتخاب کن: </h3>
+                    <p style="text-align: justify;">(راستی  موس رو رویه گزینه ها نگه داری<br>
+                        بهت درجه سختیه بازیو میگه
+                    )</p>
+
+                    <div style="margin-top: 10px;">
+                        <button class="easybtn button" title="عدد از 1 تا 15">آسون</button>
+                        <button class="middlebtn button" title="عدد از 1 تا 20">متوسط</button>
+                        <button class="hardbtn button" title="عدد از 1 تا 30">سخت</button>
+                    </div>
+                </div>
+
+                <div class="difficultImg">
+                    <img src="./img/dificult.png">
+                </div>
+
+            </div>
+
+    </div>
+
+            <div class="easy display hide">
+
+
+                <div class="easyText fontTitle ">
+
+                    <h2>خب از بین 1 تا 15 عدد وارد کن</h2>
+                    <input type="number" class="button easyInput" placeholder="اینجا وارد کن">
+
+                    <h2 class="h2Easy hide" style="font-size: 15px;margin-top: 15px;">عددت کمتر از 15 وارد کن</h2>
+
+                    <ul>
+
+                    </ul>
+
+                </div>
+
+                <img src="./img/easy.png">
+
+            </div>
+
+            
+            <div class="middle display hide">
+
+
+                <div class="middleText fontTitle ">
+
+                    <h2>خب از بین 1 تا 20 عدد وارد کن</h2>
+                    <input type="number" class="button middleInput" placeholder="اینجا وارد کن">
+
+                    <h2 class="h2Middle hide" style="font-size: 15px;margin-top: 15px;">عددت کمتر از 20 وارد کن</h2>
+
+                    <ul>
+
+                    </ul>
+
+                </div>
+
+                <img src="./img/middle.png" style="width:360px;">
+
+            </div>
+
+
+            <div class="hard display hide">
+
+
+                <div class="hardText fontTitle ">
+
+                    <h2>خب از بین 1 تا 30 عدد وارد کن</h2>
+                    <input type="number" class="button hardInput" placeholder="اینجا وارد کن">
+
+                    <h2 class="h2Hard hide" style="font-size: 15px;margin-top: 15px;">عددت کمتر از 30 وارد کن</h2>
+
+                    <ul>
+
+                    </ul>
+
+                </div>
+
+                <img src="./img/easy.png">
+
+            </div>
+
+
+
+
+            <div class="lose hide fontTitle screenAnswer display">
+
+                <h2>❌ای بابا باختی که سلطان❌</h2>
+
+                <button class="again button">شروع مجدد</button>
+
+            </div>
+            
+        </section>
+
+    </main>
+</body>
+</html>
